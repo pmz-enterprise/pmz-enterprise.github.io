@@ -1,0 +1,24 @@
+<section class="education" aria-labelledby="education-heading">
+  <h2 id="education-heading">education</h2>
+  <ul class="list-unstyled">
+    {% for education in site.data.education %}
+      <li class="experience-entry education-entry mb-3">
+        {% if education.logo %}
+          <div class="experience-logo">
+            <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo" width="128" height="80" loading="lazy">
+          </div>
+        {% endif %}
+        <div class="experience-details">
+          <div class="d-flex justify-content-between flex-wrap">
+            <strong>
+              {% if education.institution_url %}<a href="{{ education.institution_url }}">{{ education.institution | escape }}</a>{% else %}{{ education.institution | escape }}{% endif %}
+            </strong>
+            <span class="text-muted">{{ education.period | escape }}</span>
+          </div>
+          <div>{{ education.degree | escape }}</div>
+          {% if education.description %}<p class="mt-1 mb-0">{% if education.description_url %}<a href="{{ education.description_url }}">{{ education.description | escape }}</a>{% else %}{{ education.description | escape }}{% endif %}</p>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,126 @@
+/* Report-specific additions to the original local DEX-X template. */
+h1.hero-text{margin-top:0}.report-subtitle{font-size:21px;line-height:1.55;margin:0 0 24px;color:var(--fg-muted);font-style:italic}.report-hero>figure{margin:25px 0 30px}.report-hero>figure>img{width:100%;display:block;border:1.5px solid var(--fg);border-radius:15px;background:white}.report-hero .figure-caption{margin-bottom:25px}.section p{margin:0 0 22px}.section h2.tagline{font-weight:400;line-height:1.5;max-width:100%;margin:40px 0 28px}.section h3{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1.4;margin:32px 0 20px}.section a{color:var(--fg);text-underline-offset:4px}.section li{margin-bottom:8px}.section ul{padding-left:25px}.section code,.section pre{font-family:var(--mono);font-size:13px;overflow-wrap:anywhere}.section pre{white-space:pre-wrap;background:rgba(27,27,27,.03);border:1.5px solid var(--fg);border-radius:15px;padding:22px;line-height:1.65}.section table{width:100%;border-collapse:collapse;font:12px/1.6 var(--mono);border-top:1.5px solid var(--fg);border-bottom:1.5px solid var(--fg);margin:24px 0 12px}.section th,.section td{text-align:left;vertical-align:top;padding:10px 8px}.section thead{border-bottom:1px solid var(--fg)}.section tbody tr+tr{border-top:1px solid #dedbd4}.section table+p{font:13px/1.7 var(--mono);color:var(--fg-muted);margin-bottom:35px}.section figure{margin:25px 0 35px}.section figure>img{width:100%;height:auto;display:block;background:white;border:1.5px solid var(--fg);border-radius:15px}.figure-caption{font-size:12px;overflow-wrap:anywhere}.equation{text-align:center;overflow-x:auto;margin:25px 0 30px}.equation img{height:46px;width:auto;max-width:none}.citation{font-family:var(--mono);font-size:11px;white-space:nowrap}.interactive-evidence{border-top:1px solid var(--rule);padding-top:10px;margin-top:35px}.interactive-evidence>p{font:13px/1.7 var(--mono);color:var(--fg-muted)}.interactive-evidence iframe{width:100%;height:1000px;border:1.5px solid var(--fg);border-radius:15px;background:var(--bg)}.video-grid{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.video-grid figure{margin:0}.video-grid video{aspect-ratio:16/10;object-fit:contain}.toc{top:130px;max-height:calc(100vh - 160px);overflow-y:auto;scrollbar-width:thin}.toc a{font-size:11px}.toc li{margin-bottom:10px}.toc h3{font-size:24px}.footer{font-size:12px}
+@media(min-width:1400px){.toc{left:max(24px,calc((100vw - 960px)/2 - 210px));width:175px}}
+@media(max-width:900px){.report-subtitle{font-size:18px}.section h3{font-size:23px}.section h2.tagline{font-size:19px}.video-grid{grid-template-columns:1fr}.interactive-evidence iframe{height:900px}}
+@media(max-width:600px){body{padding:30px 18px}.hero-text{font-size:43px}.sub-hero-text{font-size:26px}.authors{font-size:12px}.venue{font-size:12px}.link-pill{font-size:12px;padding:10px 15px}.section table{display:block;overflow-x:auto;font-size:11px}.section th,.section td{min-width:90px}.figure-caption{padding:0;font-size:11px}.equation img{height:34px}}
+@media print{body{padding:0;background:white}.toc,.quick-links,.interactive-evidence{display:none}.main-content{max-width:none}.section{font-size:10pt;line-height:1.45}.hero-text{font-size:32pt}.sub-hero-text{font-size:20pt}.section h2.tagline{font-size:14pt;margin:20px 0}figure,table{break-inside:avoid}figure img{max-height:220px;object-fit:contain}.figure-caption{font-size:8pt}.footer{font-size:8pt}}
+/* Optional interactive details preserve the short research narrative. */
+.interactive-evidence,.demo-playback{border:1px solid var(--rule);border-radius:12px;padding:14px 18px;margin:25px 0 35px}.interactive-evidence summary,.demo-playback summary{font:13px/1.6 var(--mono);cursor:pointer}.interactive-evidence[open] summary,.demo-playback[open] summary{margin-bottom:18px}.demo-playback>p,.demo-playback .video-grid p{font:12px/1.6 var(--mono);overflow-wrap:anywhere;margin-top:10px}.demo-playback .video-grid{margin-bottom:15px}.demo-playback small{font-size:10px}.interactive-evidence iframe{height:1000px}@media print{.demo-playback{display:none}}
+.report-hero>figure>a{display:block}.report-hero>figure>a>img{display:block;width:100%;height:auto;border:1.5px solid var(--fg);border-radius:15px;background:white;cursor:zoom-in}
+.cluster-rollout h4{font:14px/1.5 var(--mono);margin:0 0 8px}.cluster-rollout>a{font:11px var(--mono)}
+
+/* Let the interface diagram sit directly on the paper background. */
+.section figure>img[src*="main03_distillation"]{background:transparent;border:0;border-radius:0}
+.section figure>img[src*="main04_demonstrations"]{background:transparent;border:0;border-radius:0}
+.section .representative-manifold-figure{border:0;background:transparent}
+.section iframe.representative-manifold{display:block;width:100%;height:900px;border:0;border-radius:0;background:transparent}
+@media(max-width:600px){.section iframe.representative-manifold{height:820px}}
+@media print{.section iframe.representative-manifold{display:none}}
+
+/* Quiet editor styling in the same warm paper palette as the report. */
+.code-example{margin:26px 0 30px;overflow:hidden;border:1px solid #d8d0c2;border-radius:10px;background:#f3eee5}
+.code-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px;border-bottom:1px solid #e0d8cb;background:#eee8dd;line-height:1.5}
+.code-language{font:500 10px/1.5 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:#686154}
+.code-caption{font:11px/1.5 var(--mono);color:#928777}
+.section .code-example pre{margin:0;padding:18px 22px 20px;overflow-x:auto;border:0;border-radius:0;background:transparent;white-space:pre;line-height:1.85;tab-size:4;scrollbar-width:thin;scrollbar-color:#c9bfaf transparent}
+.section .code-example code{display:block;padding:0;background:transparent;color:#35332e;font:13px/1.85 var(--mono);white-space:pre;overflow-wrap:normal;word-break:normal}
+.code-example .tok-string{color:#477163}
+.code-example .tok-number{color:#a16a36}
+.code-example .tok-function{color:#526c87}
+.code-example .tok-keyword{color:#80617c}
+.code-example .tok-comment{color:#8b8377;font-style:italic}
+.code-example ::selection{background:#ded4c2}
+@media(max-width:600px){.code-toolbar{padding:9px 15px}.section .code-example pre{padding:15px}.section .code-example code{font-size:12px}}
+@media print{.code-example{break-inside:avoid}.code-toolbar{padding:6px 12px}.section .code-example pre{padding:10px 12px}.section .code-example code{font-size:8pt}}
+
+/* Temporarily hide the document shortcut links; keep markup and files intact. */
+.report-hero .quick-links[hidden]{display:none}
+
+/* Main public resources, above the overview figure. */
+.project-links{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:24px 0 34px}
+.project-links .link-pill{gap:10px;padding:13px 22px;font-size:16px;line-height:1.2;white-space:nowrap}
+.project-links .link-pill svg{width:20px;height:20px}
+.project-links [aria-disabled=true]{cursor:default}
+.project-links .link-pill:focus-visible{outline:2px solid #968362;outline-offset:4px}
+@media(max-width:600px){.project-links{gap:10px;margin:20px 0 28px}.project-links .link-pill{padding:12px 17px;font-size:14px}.project-links .link-pill svg{width:18px;height:18px}}
+@media print{.project-links{display:none}}
+
+/* Short method overviews with optional, initially collapsed technical detail. */
+.section p.method-overview{font-size:19px;line-height:1.8;color:#625b4f;margin:0 0 20px;max-width:950px}
+.method-details{margin:18px 0 34px;border:1px solid #ded5c6;border-radius:9px;background:transparent;overflow:hidden}
+.method-details>summary{display:flex;align-items:center;gap:18px;padding:14px 18px;cursor:pointer;list-style:none;color:#3f382d}
+.method-details>summary::-webkit-details-marker{display:none}
+.method-details>summary::after{content:'+';margin-left:auto;font:300 22px/1 system-ui,sans-serif;color:#9b8b70;flex:none}
+.method-details[open]>summary::after{content:'−'}
+.method-details>summary:hover{background:#f3ede2}
+.method-details>summary:focus-visible{outline:2px solid #9e8863;outline-offset:-3px}
+.method-summary-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.method-summary-title{font:12px/1.6 var(--mono)}
+.method-summary-description{font:12px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;color:#92836e}
+.method-details[open]>summary{border-bottom:1px solid #e8dfd1}
+.method-detail-body{padding:22px 22px 0}
+.method-detail-body>:first-child{margin-top:0}
+.method-detail-body>figure{margin-left:0;margin-right:0}
+@media(max-width:600px){.section p.method-overview{font-size:17px}.method-details>summary{padding:13px 15px}.method-detail-body{padding:18px 15px 0}.method-summary-description{font-size:11px}}
+
+/* Demonstrations lead the method narrative, with supporting records on demand. */
+.featured-demos{margin:42px 0 48px;padding:28px 0 24px;border-top:1px solid #d9cfbd;border-bottom:1px solid #d9cfbd;scroll-margin-top:28px}
+.featured-demos-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:12px}
+.featured-demos-heading h2{margin:0;font:700 38px/1.25 var(--serif);letter-spacing:-.025em;background:none;color:var(--fg)}
+.featured-demos-heading>span{font:10px/1.6 var(--mono);color:#927c58;text-align:right}
+.section .featured-demos .demo-editing-note{font:13px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif;color:#82735e;margin:0 0 24px;max-width:780px}
+.section .featured-demos .demo-lead{font-size:19px;line-height:1.7;max-width:800px;color:#665d50;margin:0 0 25px}
+.featured-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 18px}
+.featured-demo{min-width:0}
+.demo-pending{margin-top:22px;padding:30px 24px;border:1px solid #e0d5c1;border-radius:9px;background:#f7f2e8}
+.section .demo-pending p{margin:0;font:20px/1.7 var(--serif);color:#9a896d}
+.section .demo-rollout-caption{font:12px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif;color:#8f7f65;margin:10px 0 0}
+.featured-demos .demo-group{margin-top:28px}
+.featured-demos .demo-group+.demo-group{margin-top:38px;padding-top:27px;border-top:1px solid #e1d7c6}
+.section .featured-demos .demo-group-title{font:700 25px/1.4 var(--serif);margin:0 0 20px;color:#5c503d}
+.demo-group .featured-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px}
+.demo-group .featured-demo-grid>.featured-demo:only-child{grid-column:1/-1}
+.demo-group .featured-demo-heading h4{font:700 20px/1.5 var(--serif);margin:0;color:#514737}
+.demo-group .featured-demo video{aspect-ratio:16/9;object-fit:contain;background:#252520}
+.demo-group .demo-pending{margin-top:0;padding:22px 24px}
+.section .demo-group .demo-pending p{font-size:17px}
+@media(max-width:650px){.demo-group .featured-demo-grid{grid-template-columns:1fr}.section .featured-demos .demo-group-title{font-size:23px}.demo-group .featured-demo-heading h4{font-size:19px}}
+.featured-demo-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:10px}
+.section .featured-demo h3{display:flex;align-items:baseline;gap:9px;font:700 19px/1.4 var(--serif);margin:0;min-width:0}
+.featured-demo h3 span{font:10px/1.6 var(--mono);color:#9b8461;flex:none}
+.demo-duration{font:10px/1.6 var(--mono);color:#aa9c84;white-space:nowrap}
+.featured-demo video{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;border-radius:9px;background:#dededc;border:1px solid #d9d2c7}
+.featured-demo-footer{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:20px 0 0}
+.section .featured-demo-footer p{font:11px/1.8 system-ui,-apple-system,'Segoe UI',sans-serif;color:#94846c;margin:0;max-width:650px}
+.featured-demo-footer>a{font:11px/1.6 var(--mono);white-space:nowrap;color:#7b6545;text-decoration:underline;text-underline-offset:4px}
+.demo-records{margin-top:18px;padding-top:13px;border-top:1px solid #e6ddce}
+.demo-records>summary{cursor:pointer;font:11px/1.7 var(--mono);color:#8c7a5e}
+.demo-records[open]>summary{margin-bottom:16px}
+.section .demo-records>p{font:12px/1.8 system-ui,-apple-system,'Segoe UI',sans-serif;color:#83735b;margin-bottom:12px}
+.demo-record-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;margin-top:20px}
+.demo-record-grid article{min-width:0;padding-top:12px;border-top:1px solid #e6ddce}
+.demo-record-grid h4{font:12px/1.5 var(--mono);margin:0 0 6px;color:#5d503d}
+.section .demo-record-grid p{font:11px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif;margin:6px 0;color:#93836b}
+.section .demo-record-grid p.demo-record-key{font:10px/1.8 var(--mono);overflow-wrap:anywhere}
+.demo-record-grid a{font:10px/1.6 var(--mono);color:#7e6b4b}
+.toc .toc-demo a{color:#7d6239;font-weight:700}
+@media(max-width:900px){.featured-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-demo-footer{align-items:flex-start;flex-direction:column;gap:9px}}
+@media(max-width:600px){.featured-demos{margin:30px 0 34px;padding-top:22px}.featured-demos-heading{gap:12px}.featured-demos-heading h2{font-size:32px}.featured-demos-heading>span{font-size:9px}.section .featured-demos .demo-lead{font-size:17px}.featured-demo-grid{gap:20px 14px}.section .featured-demo h3{font-size:17px;gap:6px}.demo-duration{display:none}.demo-record-grid{grid-template-columns:1fr}}
+@media(max-width:430px){.featured-demo-grid{grid-template-columns:1fr}}
+@media print{.demo-records{display:none}.featured-demo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.featured-demos{break-inside:avoid}}
+.section .tldr p{margin:0}
+.section .tldr strong{font-weight:700}
+.section .tldr em.tldr-emphasis{font-weight:400;font-style:italic}
+[data-maintenance][hidden]{display:none!important}
+
+.project-authors{font-family:var(--serif);font-size:18px;line-height:1.65;color:#27241f;margin:18px 0 28px;text-align:center}
+.project-authors .author-names{font-weight:700}
+.project-authors sup{font:600 .62em/0 var(--mono);vertical-align:super;letter-spacing:0}
+.project-authors .author-affiliations{font:13px/1.7 var(--mono);color:#81735f;margin-top:5px}
+@media(max-width:600px){.project-authors{font-size:15px;line-height:1.7}.project-authors .author-affiliations{font-size:10px;line-height:1.8}}
+
+/* Supplementary flow diagrams share the main report's paper background. */
+.report-hero>figure>img[src*="fig01_overview"],
+.section figure>img[src*="fig03_distillation"],
+.section figure>img[src*="fig04_interfaces"],
+.section figure>img[src*="fig07_runtime"]{background:transparent;border:0;border-radius:0}

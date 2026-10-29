@@ -1,0 +1,17 @@
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D.
+      institution: Tsinghua University, School of Artificial Intelligence
+      year: Present
+    - title: B.S.
+      institution: Beijing University of Posts and Telecommunications
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Embodied AI
+      items:
+        - Egocentric vision and online 4D reconstruction
+        - Dexterous manipulation and humanoid robotics
+        - Learning from human videos

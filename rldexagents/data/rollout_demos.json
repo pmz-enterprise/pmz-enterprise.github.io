@@ -1,0 +1,70 @@
+[
+  {
+    "id": "apple",
+    "group": "real_world",
+    "title": "Apple transfer",
+    "video": "demos/苹果.mp4",
+    "poster": "assets/rollout_posters/apple.jpg",
+    "poster_time_s": 45.0,
+    "duration_s": 86.81941,
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "box",
+    "group": "real_world",
+    "title": "Box handling",
+    "video": "demos/盒子.mp4",
+    "poster": "assets/rollout_posters/box.jpg",
+    "poster_time_s": 40.0,
+    "duration_s": 87.748209,
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "brush",
+    "group": "real_world",
+    "title": "Brush handling",
+    "video": "demos/毛笔.mp4",
+    "poster": "assets/rollout_posters/brush.jpg",
+    "poster_time_s": 45.0,
+    "duration_s": 90.255964,
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "multi-object",
+    "group": "real_world",
+    "title": "Multi-object grasping",
+    "video": "demos/20261027-170227.mp4",
+    "poster": "assets/rollout_posters/multi-object.jpg",
+    "poster_time_s": 49.5,
+    "duration_s": 109.933333,
+    "width": 960,
+    "height": 540
+  },
+  {
+    "id": "chess-three-views",
+    "group": "simulation",
+    "title": "Chess manipulation",
+    "video": "demos/sim/chess_three_views_2880x1440.mp4",
+    "poster": "assets/rollout_posters/chess-three-views.jpg",
+    "poster_time_s": 29.9,
+    "duration_s": 38.36,
+    "width": 2880,
+    "height": 1440,
+    "caption": "Three camera views of the same simulated rollout."
+  },
+  {
+    "id": "kitchen-food-sorting",
+    "group": "simulation",
+    "title": "Kitchen food sorting",
+    "video": "demos/sim/厨房食品分类_腕部方向修正_demo.mp4",
+    "poster": "assets/rollout_posters/kitchen-food-sorting.jpg",
+    "poster_time_s": 17.5,
+    "duration_s": 35.0,
+    "width": 2880,
+    "height": 1440,
+    "caption": "Three camera views of a simulated kitchen sorting rollout with wrist-direction correction."
+  }
+]

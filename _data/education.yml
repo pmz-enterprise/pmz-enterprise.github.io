@@ -1,0 +1,15 @@
+- institution: Tsinghua University
+  institution_url: https://www.tsinghua.edu.cn/en/
+  logo: /assets/img/education-tsinghua.svg
+  degree: Ph.D.
+  period: Sep 2026 – Present
+  description: College of AI
+  description_url: https://collegeai.tsinghua.edu.cn/
+
+- institution: Beijing University of Posts and Telecommunications
+  institution_url: https://www.bupt.edu.cn/
+  logo: /assets/img/education-bupt.png
+  degree: B.S.
+  period: Sep 2022 – Jun 2026
+  description: Future College
+  description_url: https://future.bupt.edu.cn/
