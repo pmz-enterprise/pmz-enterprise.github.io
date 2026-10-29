@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{id: "projects-egohsi3r",
           title: 'EgoHSI3R',
           description: "Online 4D hand-scene interaction reconstruction from egocentric video.",
