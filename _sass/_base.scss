@@ -765,15 +765,15 @@ footer.sticky-bottom {
       margin-bottom: 1.25rem;
     }
   }
+}
+
+.publications {
+  margin-top: 2rem;
 
   .publication-summary {
     margin: 0.35rem 0;
     line-height: 1.5;
   }
-}
-
-.publications {
-  margin-top: 2rem;
 
   h1 {
     color: var(--global-theme-color);

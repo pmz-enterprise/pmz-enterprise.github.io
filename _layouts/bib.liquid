@@ -49,7 +49,7 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
-    {% if page.layout == 'about' and entry.summary %}
+    {% if entry.summary %}
       <p class="publication-summary">{{ entry.summary }}</p>
     {% endif %}
     <!-- Author -->
