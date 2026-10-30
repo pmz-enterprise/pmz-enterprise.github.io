@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "projects-egohsi3r",
           title: 'EgoHSI3R',
-          description: "Online 4D hand-scene interaction reconstruction from egocentric video.",
+          description: "Reconstructing camera motion, dense scenes, world-space hands, and hand contact from egocentric video in a streaming manner.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/egohsi3r/";
             },},{
