@@ -10,7 +10,13 @@
         {% endif %}
         <div class="experience-details">
           <div class="d-flex justify-content-between flex-wrap">
-            <strong>{{ experience.institution | escape }}</strong>
+            <strong>
+              {% if experience.institution_url %}
+                <a href="{{ experience.institution_url | escape }}">{{ experience.institution | escape }}</a>
+              {% else %}
+                {{ experience.institution | escape }}
+              {% endif %}
+            </strong>
             <span class="text-muted">{{ experience.period | escape }}</span>
           </div>
           <div>
