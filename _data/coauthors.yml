@@ -1,6 +1,18 @@
 # Co-author homepages. Keys are lowercase last names; `firstname` must match
 # the first name as written in _bibliography/papers.bib.
 
+"ye":
+  - firstname: ["Zhangchen", "Z."]
+    url: https://yzc0731.github.io/
+
+"chen":
+  - firstname: ["Ruoqu", "R."]
+    url: https://gcfy63821.github.io/
+
+"feng":
+  - firstname: ["Yao", "Y."]
+    url: https://yfeng95.github.io/
+
 "xu":
   - firstname: ["Mengdi", "M."]
     url: https://www.mengdixu.me/
