@@ -1,7 +1,7 @@
 ---
 layout: page
 title: EgoHSI3R
-description: Online 4D hand-scene interaction reconstruction from egocentric video.
+description: Reconstructing camera motion, dense scenes, world-space hands, and hand contact from egocentric video in a streaming manner.
 img: assets/img/publication_preview/egohsi3r.png
 importance: 1
 category: research
