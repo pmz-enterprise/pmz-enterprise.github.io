@@ -26,7 +26,9 @@ latest_posts:
   limit: 3
 ---
 
-I am Mingzhi Pei, a Ph.D. student at the College of AI, Tsinghua University. My research interests are 3D vision and embodied AI. I received my bachelor's degree from Beijing University of Posts and Telecommunications.
+I am Mingzhi Pei, a Ph.D. student at the College of AI, Tsinghua University, working under Prof. [Yao Feng](https://yfeng95.github.io/) and working closely with [Zhangchen Ye](https://yzc0731.github.io/). My research interests are 3D vision and embodied AI.
+
+During my undergraduate studies at Beijing University of Posts and Telecommunications, I was honored to be advised by Prof. [Mengdi Xu](https://www.mengdixu.me/), who introduced me to robotics. I am also grateful to my undergraduate advisors, [Heng Guo](https://gh-home.github.io/) and [Zhanyu Ma](https://zhanyuma.cn/), for their guidance and support.
 
 ## Research
 
